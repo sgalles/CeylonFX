@@ -1,6 +1,4 @@
-import ceylon.interop.java {
-	javaString
-}
+
 
 import ceylonfx.application.java {
 	TypeConverter
@@ -37,7 +35,7 @@ shared object booleanJ2C satisfies TypeConverter<Bool, Boolean> {
 }
 
 shared object stringC2J satisfies TypeConverter<String, JString> {
-	shared actual JString convert(String from) => javaString(from);
+	shared actual JString convert(String from) => JString(from);
 }
 
 shared object stringJ2C satisfies TypeConverter<JString, String> {

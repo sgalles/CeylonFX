@@ -18,7 +18,7 @@ import ceylonfx.scene.paint {
 import javafx.scene {
 	Node,
 	JScene=Scene,
-	Group
+	JGroup=Group
 }
 
 shared class Scene(
@@ -30,10 +30,10 @@ shared class Scene(
     
     shared ObjectProperty<Paint> fillProperty = ObjectProperty<Paint>(white);
     
-    shared actual JScene createDelegate() {
-        Group root = Group();
-        root.children.setAll(*asNodes(children));
-        value jscene = JScene(root, dimension[0], dimension[1], depthBuffer);
+    shared Group group = Group(children);
+    
+    shared actual JScene createDelegate(){ 
+        value jscene = JScene(group.delegate, dimension[0], dimension[1], depthBuffer);
         fillProperty.onChange((Paint paint) => jscene.fill = paint.delegate);
         switch(fill)
         case (is Paint) { fillProperty.set(fill); }
