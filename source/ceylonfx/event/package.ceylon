@@ -1,1 +1,1 @@
-package ceylonfx.event;
+shared package ceylonfx.event;

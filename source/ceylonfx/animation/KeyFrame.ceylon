@@ -14,15 +14,14 @@ import ceylonfx.util {
 }
 
 import javafx.animation {
-	JKeyFrame=KeyFrame,
-	JKeyValue=KeyValue
+	JKeyFrame=KeyFrame
 }
 
 import javafx.event {
 	JEventHandler=EventHandler,
 	JActionEvent=ActionEvent
 }
-import ceylonfx.scene.paint { Paint }
+
 shared class KeyFrame(
 	Duration time, 
 	EventHandler<ActionEvent> onFinished)

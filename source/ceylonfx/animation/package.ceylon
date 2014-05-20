@@ -1,1 +1,1 @@
-package ceylonfx.animation;
+shared package ceylonfx.animation;

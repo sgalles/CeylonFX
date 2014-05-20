@@ -86,6 +86,11 @@ shared abstract class CeylonFxAdapter<out Delegate>()
 	
 }
 
+shared {Delegate*} transformCeylonFxAdapter<Delegate>({CeylonFxAdapter<Delegate>*} delegates)
+			given Delegate satisfies Object {
+	return delegates map CeylonFxAdapter<Delegate>.delegate;
+}
+
 "A Ceylon Node"
 shared alias CeylonNode => CeylonFxAdapter<Node>;
 
