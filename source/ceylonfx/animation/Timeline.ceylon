@@ -14,8 +14,12 @@ shared class Timeline(
 	{KeyFrame*} keyFrames,
 	Integer cycleCount=1) 
 		extends CeylonFxAdapter<JTimeline>() {
-			JTimeline jtimeline = JTimeline(*transformCeylonFxAdapter(keyFrames));
-			jtimeline.cycleCount = cycleCount;
-			shared actual JTimeline createDelegate() => jtimeline;
+    
+		JTimeline jtimeline = JTimeline(*transformCeylonFxAdapter(keyFrames));
+		jtimeline.cycleCount = cycleCount;
+		
+		shared actual JTimeline createDelegate() => jtimeline;
+		
+		shared void play() => delegate.play();
 			
-		}
+}
