@@ -1,14 +1,14 @@
-import ceylonfx.application {
-	CeylonFxAdapter
+import ceylonfx.scene {
+    Node
 }
 
 import javafx.scene.image {
-	JImageView=ImageView
+    JImageView=ImageView
 }
 
 
 shared class ImageView(Image image) 
-		extends CeylonFxAdapter<JImageView>() {
+		extends Node<JImageView>() {
     
         JImageView jimageview = JImageView(image.delegate);
 		
