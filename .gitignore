@@ -2,8 +2,6 @@
 /classes
 *.class
 .ceylon
-.project
-.classpath
 /.exploded
 /.exploded
 /.exploded
