@@ -1,5 +1,8 @@
-import ceylonfx.utils { nullSafeEquals }
+import ceylonfx.utils {
+    nullSafeEquals
+} 
 
+ 
 "A read-only property."
 shared interface Property<out Prop> {
 	"Gets the value of this property."

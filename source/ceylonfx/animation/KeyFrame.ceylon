@@ -1,25 +1,20 @@
-import ceylon.language {
-	shared
-}
-
 import ceylonfx.application {
-	CeylonFxAdapter
+    CeylonFxAdapter
 }
 import ceylonfx.event {
-	ActionEvent,
-	EventHandler
+    ActionEvent,
+    EventHandler
 }
 import ceylonfx.util {
-	Duration
+    Duration
 }
 
 import javafx.animation {
-	JKeyFrame=KeyFrame
+    JKeyFrame=KeyFrame
 }
-
 import javafx.event {
-	JEventHandler=EventHandler,
-	JActionEvent=ActionEvent
+    JEventHandler=EventHandler,
+    JActionEvent=ActionEvent
 }
 
 shared class KeyFrame(
