@@ -1,11 +1,10 @@
 import ceylonfx.application {
-	CeylonFxAdapter,
-	transformCeylonFxAdapter
+    CeylonFxAdapter,
+    transformCeylonFxAdapter
 }
 
 import javafx.animation {
-	JTimeline=Timeline,
-	JAnimation=Animation
+    JTimeline=Timeline
 }
 
 
